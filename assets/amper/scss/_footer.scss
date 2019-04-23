@@ -1,0 +1,69 @@
+// Footer
+.company-info{
+	background: $dark_one;
+	padding: 60px 0px ;
+	.contact-info{
+		text-align: center;
+		color: #fff;
+		h3{
+			text-transform: uppercase;
+			margin:0px 0px 10px 0px;
+			font-size: 24px;
+
+		}
+		p{
+			color: #c2c2c6;
+			font-weight: 300;
+			font-size: 14px;
+
+		}
+		span{
+			margin:0px 10px;
+			font-weight: 300;
+			color: #c2c2c6;
+		}
+	}
+}
+
+.social-icons{
+	ul{
+	margin:20px 0px 0px 0px;
+	padding: 0px 0px;
+	text-align: center;
+		li{
+			display: inline-block;
+			margin:0px 5px;
+			font-size: 18px;
+			background: #222534;
+			width: 40px;
+			line-height: 40px;
+			border-radius: 3px;
+			height: 40px;
+			a:link, a:visited{
+				display: block;
+				color:$secondary-color;
+
+
+			}
+			a:hover{
+				color:#fff;
+			}
+		}
+	}
+}
+
+#footer{
+	background:$dark_two;
+	padding: 40px 0px;
+	text-align: center;
+	color: #c2c2c6;
+	font-size: 14px;
+	font-weight: 300;
+	p{
+		margin:0px 0px;
+
+	}
+	a{
+		color: #c2c2c6;
+	}
+}

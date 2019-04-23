@@ -1,0 +1,194 @@
+---
+- 
+  id: 1
+  type: U
+  title: Контактная информация
+  flags: 0
+  fields:
+    - 
+      type: text
+      name: email
+      label: Адрес email
+      sort: 1
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+        validator: email
+    - 
+      type: text
+      name: name
+      label: Полное имя
+      sort: 2
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: phone
+      name: phone
+      label: Номер телефона
+      sort: 3
+      flags: 13057
+    - 
+      type: memo
+      name: notes
+      label: Внутренние Заметки
+      sort: 4
+      flags: 12289
+      configuration:
+        rows: 4
+        cols: 40
+- 
+  id: 2
+  type: T
+  title: Детали заявки
+  instructions: Пожалуйста, опишите вашу проблему
+  notes: |
+    Эта форма будет доступна в каждой заявке, независимо от её источника.
+    В эту форму вы можете добавить любое поле, и оно будет доступно во 
+    всех заявках, и будет использоваться в расширенном поиске и фильтре.
+  flags: 0
+  fields:
+    - 
+      id: 20
+      type: text
+      name: subject
+      label: Краткое описание
+      sort: 1
+      flags: 489249
+      configuration:
+        size: 40
+        length: 50
+    - 
+      id: 21
+      type: thread
+      name: message
+      label: Детали проблемы
+      hint: Подробности о причинах создания заявки.
+      sort: 2
+      flags: 480547
+    - 
+      id: 22
+      type: priority
+      name: priority
+      label: Уровень Приоритета
+      flags: 274609
+      sort: 3
+- 
+  type: C
+  title: Информация о компании
+  instructions: Детали, доступные в шаблонах email
+  flags: 0
+  fields:
+    - 
+      type: text
+      name: name
+      label: Название компании
+      sort: 1
+      flags: 291233
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: text
+      name: website
+      label: Веб-сайт
+      sort: 2
+      flags: 12545
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: phone
+      name: phone
+      label: Номер телефона
+      sort: 3
+      flags: 12545
+      configuration:
+        ext: false
+    - 
+      type: memo
+      name: address
+      label: Адрес
+      sort: 4
+      flags: 12545
+      configuration:
+        rows: 2
+        cols: 40
+        html: false
+        length: 100
+- 
+  type: O
+  title: Сведения об организации
+  instructions: Подробности об организации клиента
+  flags: 0
+  fields:
+    - 
+      type: text
+      name: name
+      label: Имя
+      sort: 1
+      flags: 489379
+      configuration:
+        size: 40
+        length: 64
+    - 
+      type: memo
+      name: address
+      label: Адрес
+      sort: 2
+      flags: 13057
+      configuration:
+        rows: 2
+        cols: 40
+        length: 100
+        html: false
+    - 
+      type: phone
+      name: phone
+      label: Телефон
+      sort: 3
+      flags: 13057
+    - 
+      type: text
+      name: website
+      label: Веб-сайт
+      sort: 4
+      flags: 13057
+      configuration:
+        size: 40
+        length: 0
+    - 
+      type: memo
+      name: notes
+      label: Внутренние Заметки
+      sort: 5
+      flags: 12289
+      configuration:
+        rows: 4
+        cols: 40
+- 
+  type: A
+  title: Подробности задачи
+  instructions: Опишите проблему
+  notes: |
+    Эта форма используется для создания задачи.
+  flags: 0
+  fields:
+    - 
+      type: text
+      name: Заголовок
+      flags: 290977
+      sort: 1
+      label: Заголовок
+      configuration:
+        size: 40
+        length: 50
+    - 
+      type: thread
+      name: description
+      flags: 282867
+      sort: 2
+      label: Описание
+      hint: Подробная информация создания задачи.

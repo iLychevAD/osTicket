@@ -1,0 +1,19 @@
+---
+notes: |
+  Соавторам отправляется извещение об активности по задаче - например, об ответе или сообщении.
+subject: |
+  Re: %{task.title} [#%{task.number}]
+body: |
+  <h3><strong>Здравствуйте, %{recipient.name.first},</strong></h3>
+  <div>
+  <em>%{poster.name}</em> добавлено новое сообщение в задаче, в которой Вы состоите
+  </div>
+  <br>
+  %{message}
+  <br>
+  <br>
+  <hr>
+  <div style="color: rgb(127, 127, 127); font-size: small; text-align: center;">
+  <em>Вы получили это письмо, потому что вы являетесь сотрудником задачи
+  #%{task.number}. Чтобы ответить в заявке, просто ответьте на это письмо.</em>
+  </div>

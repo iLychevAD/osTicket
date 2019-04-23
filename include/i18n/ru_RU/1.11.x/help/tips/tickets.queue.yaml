@@ -1,0 +1,57 @@
+---
+search_field:
+  title: Поле Поиска
+  0: >
+
+advanced:
+  title: Дополнительно
+  content: >
+    Сузьте свои параметры поиска. После того, как Вы выбрали дополнительные критерия поиска и выполнили поиск - Вы можете <span class="doc-desc-title">Экспортировать</span> данные внизу страницы Заявок.
+open_tickets_table:
+  title: Таблица Открытых Заявок
+  content: >
+    Все Заявки, которые сейчас открыты и требуют внимания
+ticket:
+  title: Заявка
+  0: >
+
+date:
+  title: Дата
+  0: >
+
+subject:
+  title: Тема
+  0: >
+
+from:
+  title: От
+  0: >
+
+priority:
+  title: Приоритет
+  0: >
+
+assigned_to:
+  title: Назначено На
+  0: >
+
+export:
+  title: Экспорт
+  content: >
+    Экспортировать данные, которые сейчас отображаются, в CSV-файл. CSV-файлы могут быть открыты любым редактором таблиц (например, Microsoft Excel, Apple Pages, OpenOffice Calc и др.).
+advanced_search_dialog:
+  title: Расширенный поиск
+  0: >
+
+adv_keyword:
+  title: Поиск по ключевым словам
+  content: >
+    Найти совпадения на основании темы и тел сообщений ветки Заявки, а также всего текстового содержимого, связанного с настраиваемыми полями Пользователей и Заявок.
+adv_date_range:
+  title: Поиск по дате
+  content: >
+    Определение здесь
+reply_types:
+  title: Reply Types
+  content: >
+    <b>Reply All:</b> This reply is sent to the User and the Collaborators you choose to include.</br> <b>Reply to User:</b> This reply is sent to the User only, no Collaborators.</br> <b>Do Not Email Reply:</b> No email alerts are sent out, however, the Agent response is visible to <b>ALL</b> Users upon viewing the Ticket.

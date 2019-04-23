@@ -1,0 +1,45 @@
+---
+ticket_activity:
+  title: Активность заявок
+  content: >
+    Выберите диапазон дат, чтобы график и таблица (см. <span class="doc-desc-title"> Статистика</span>) ниже фокусировались на любых данных за эти даты. На графике ниже всегда будет отображаться общий обзор данных всей системы. Однако, Вы можете пройтись по таблице <span class="doc-desc-title"> Статистика</span>, чтобы посмотреть данные по более узкому предмету (например, Отдел, Заявки или Персонал). Кроме того, Вы можете экспортировать любые данные, которые отображаются в таблице <span class="doc-desc-title">Статистика</span> в настоящий момент.
+report_timeframe:
+  title: Период отчета
+  content: >
+    Выберите начальную дату для выборки нужных данных. Затем, выберите продолжительность времени от этой даты, чтобы определить дату окончания нужного Вам отчёта.
+statistics:
+  title: Статистика
+  content: >
+    Перейдите к интересующей вас теме, нажав на соответствующую вкладку, чтобы увидеть нужную информацию. В таблице, круги представляют собой размер номинальных данных. Поэтому чем больше число в определенной ячейке, тем больше круги будут прилегать друг к другу.
+opened:
+  title: Открыто
+  content: >
+    Tickets that were originally opened having the Department or Help Topic on the ticket, or the number of tickets an Agent has opened on behalf of a User.
+assigned:
+  title: Назначено
+  content: >
+    Tickets that have been assigned to either an Agent or a Team. The number reflects tickets that are manually assigned to agents or teams, claimed tickets, and tickets assigned from ticket filters/other auto-assignment rules.
+overdue:
+  title: Просрочено
+  content: >
+    Tickets that have been marked ‘Overdue’ by the system. Tickets are marked Overdue when they have violated the SLA Plan to which they belonged, causing them to have a status of ‘Open’ past their Due Date.
+closed:
+  title: Закрыто
+  content: >
+    The number of Tickets that are currently in the Closed status.
+reopened:
+  title: Вновь открыто
+  content: >
+    The total number of times a ticket was Reopened. Tickets are reopened whenever their status is changed from Closed to Open.
+deleted:
+  title: Удаленная
+  content: >
+    The amount of tickets that have been deleted.
+service_time:
+  title: Время обслуживания
+  content: >
+    Refers to the duration of time that begins at the opening of a ticket and ends when the ticket is closed. The Service Time column measures the average Service Time per ticket, in hours.
+response_time:
+  title: Время отклика
+  content: >
+    Shows an average response time by an Agent, in hours, to ticket correspondence.

@@ -1,0 +1,74 @@
+---
+number_format:
+  title: Формат номеров Заявок
+  content: >
+    Эти настройки используются для генерации номеров заявок. Используйте знак решетки (`#`) в качестве размещаемых цифр. Любой другой текст будет сохранен. <span class="doc-desc-title"> Категории Заявок</span> могут иметь пользовательские числовые форматы. <br/><br/> Например, для шестизначных номеров используйте код <code>######</code>.
+sequence_id:
+  title: Последовательность нумерации заявок
+  content: >
+    Выберите последовательность нумерации новых заявок. Система может использовать нумерацию по возрастанию или случайную нумерацию по умолчанию. Вы можете выбрать нужный Вам вариант нумерации заявок. Используйте различные варианты в настройках <span class="doc-desc-title"> Формата Нумерации Заявок </span> для категорий заявок.
+queue_bucket_counts:
+  title: Top-Level Ticket Counts
+  content: >
+    This setting is used to hide or show the ticket counts on Main-Level queues. Get back to the way things used to be.
+default_ticket_status:
+  title: Статус по умолчанию для новых заявок
+  content: >
+    Выберите статус по умолчанию для новых заявок. Статус может быть определен для каждой категории, если это необходимо. Настройка также может быть изменена с помощью фильтра заявок.
+  links:
+    - 
+      title: Управление статусами заявок
+      href: /scp/lists.php?type=ticket-status
+default_sla:
+  title: Базовое SLA
+  content: >
+    Выберите соглашение об уровне обслуживания по умолчанию для контроля того, как долго заявка может оставаться открытой до её перемещения в просроченные.
+  links:
+    - 
+      title: Создать больше профилей SLA
+      href: /scp/slas.php
+default_priority:
+  title: Приоритет по умолчанию
+  content: >
+    Выберите <span class="doc-desc-title">приоритет</span> по умолчанию для Заявок, которым другой приоритет не назначается автоматически. <br/><br/> Приоритет может быть назначен через настройки категории Заявки, отдела или фильтра Заявок.
+maximum_open_tickets:
+  title: Максимально открытых заявок
+  content: >
+    Выберите максимальное <em>число</em> Заявок, которое Пользователю разрешается иметь <strong>открытыми</strong> в Вашей службе помощи. <br><br> Введите <span class="doc-desc-opt">0 </span>, если Вы предпочитаете отключить это ограничение.
+email_ticket_priority:
+  title: Приоритет Почтовой Заявки
+  content: >
+    Использовать приоритет письма, назначенный почтовой службой адресата
+show_related_tickets:
+  title: Показать Связанные Заявки
+  content: >
+    Показать все связанные Заявки при входе пользователя - в противном случае, доступ ограничен одной Заявкой за вход
+human_verification:
+  title: Проверка Человека
+  content: >
+    Включить CAPTCHA на Клиентском Портале для проверки, что входящая Заявка - результат активности человека. <br><br> Требует библиотеку GDLib
+claim_tickets:
+  title: Авто-назначение Заявки при ответе
+  content: >
+    Включите для авто-назначения сотрудника ответившему на заявку для не назначенных заявок. <br><br>Заявки, открытые вновь будут назначаться последнему ответившему сотруднику.
+collaborator_ticket_visibility:
+  title: Collaborator Tickets Visibility
+  content: >
+    If Enabled, Users will have visibility to ALL Tickets they participate in when signing into the Web Portal. <br><br> If Disabled, Users will only be able to see their own Tickets when signing into the Web Portal.
+require_topic_to_close:
+  title: Require Help Topic to Close
+  content: >
+    If Enabled, a Ticket must have a Help Topic in order to be Closed by an Agent
+assigned_tickets:
+  title: Назначенные заявки
+  content: >
+    Включите эту функцию для исключения назначенных заявок из <span class="doc-desc-title">Очереди Открытых Заявок</span>.
+answered_tickets:
+  title: Заявки получившие ответ
+  content: >
+    Включите эту функцию, чтобы показывать отвеченные Заявки в <span class="doc-desc-title">Очереди Отвеченных Заявок</span>. В противном случае, они будут включаться в <span class="doc-desc-title">Очередь Открытых Заявок</span>.
+ticket_attachment_settings:
+  title: Вложения к заявке
+  content: >
+    Настройка параметров для файлов прикрепленных к полю <span class="doc-desc-title"> подробностей проблемы </span>. Эти настройки используются для всех новых заявок и новых сообщений независимо от источника заявки (портал, электронная почта, API и т.д.).
+

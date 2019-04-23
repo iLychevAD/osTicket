@@ -1,0 +1,107 @@
+// Hero
+.hero{
+  	background: url(../images/hero.jpg);
+  	background-size: cover;
+  	background-position: center;
+  	margin-top:-1px;
+  	min-height: 500px;
+  	text-align: center;
+
+  	width: 100%;
+	.hero-content{
+		padding: 100px 15px;
+		color: #fff;
+
+		h1{
+			text-transform: uppercase;
+			font-weight: 900;
+			font-size: 56px;
+		}
+		p{
+			font-size: 24px;
+			font-weight: 300;
+		}
+	}
+}
+
+#landing_page{
+	padding:60px 0px;
+	#new_ticket, #check_status{
+		text-align: center;
+		padding: 0px 15px;
+		i{
+			color: #000;
+			margin-bottom:20px;
+			font-size: 56px;
+			display: block;
+		}
+		h3{
+			font-size: 24px;
+			font-weight: 800;
+			color: #383c4f;
+			margin-bottom: 20px;
+			margin-top:0px;
+		}
+		.button{
+			background:$secondary-color;
+			color: #fff;
+			font-weight: 800;
+			margin-top:25px;
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 3px;
+		}
+	}
+}
+
+.kb-home{
+	background: $primary_color;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+	padding: 60px 0px;
+	p{
+		padding: 0px 30px;
+		margin:0px 0px;
+	}
+	a{
+		color: #fff;
+	}
+	span.ardown{
+		color:$primary_color;
+		position: absolute;
+		font-size: 50px;
+		left:50%;
+		bottom:-40px;
+		margin-left: -25px;
+	}
+    .search-form{
+        width:420px;
+        margin:20px auto;
+        padding:0px 0px;
+        input.search{
+            border:none;
+            background: #fff;
+            height:50px;
+            padding: 0px 10px;
+            width:280px;
+            margin:0px 0px;
+            border-radius: 3px;
+            float: left;
+
+        }
+        button.button{
+            float:left;
+            width:100px;
+            height:50px;
+            border-radius: 5px;
+            font-size: 16px;
+            border:none;
+            background: $dark_one;
+            color:#fff;
+            margin-left:10px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+---
+- 
+  id: 1
+  name: Приоритет + Недавно измененные
+  columns: '["-cdata__priority","-lastupdate"]'
+- 
+  id: 2
+  name: Приоритет + Недавно созданные
+  columns: '["-cdata__priority","-created"]'
+- 
+  id: 3
+  name: Приоритет + Срок
+  columns: '["-cdata__priority","-est_duedate"]'
+- 
+  id: 4
+  name: Срок сдачи
+  columns: '["-est_duedate"]'
+- 
+  id: 5
+  name: Дата закрытия
+  columns: '["-closed"]'
+- 
+  id: 6
+  name: Дата создания
+  columns: '["-created"]'
+- 
+  id: 7
+  name: Update Date
+  columns: '["-lastupdate"]'

@@ -1,0 +1,154 @@
+// Dynamic form
+
+.form-header{
+	margin-bottom: 20px;
+	margin-top:30px;
+	h3{
+		font-size: 24px;
+		margin:0px 0px;
+		color: #222;
+
+	}
+}
+
+input.button{
+	margin-top:10px;
+	background: $secondary-color;
+	border:1px solid $secondary-color;
+	color: #fff;
+	padding:10px 20px;
+	border-radius: 3px;
+	line-height: 1;
+}
+a.button{
+	margin-top:10px;
+	background: $secondary-color;
+	color: #fff;
+	padding:10px 20px;
+	border-radius: 3px;
+}
+
+.login-box{
+
+	div{
+		margin:10px 0px;
+		label{
+			display: block;
+		}
+	}
+	input.button{
+		margin-top:10px;
+		background: $secondary-color;
+		border:1px solid $secondary-color;
+		color: #fff;
+		padding:10px 20px;
+		border-radius: 3px;
+		line-height: 1;
+	}
+	a.button{
+		margin-top:10px;
+		background: $secondary-color;
+		color: #fff;
+		padding:10px 20px;
+		border-radius: 3px;
+	}
+}
+
+// Forms
+
+#ticketForm{
+	margin:30px 0px;
+	div.captchaRow {
+      line-height: 31px;
+      input {
+        position: relative;
+        top: 6px;
+      }
+    }
+ .button{
+ 	background:$secondary-color;
+ 	border:none;
+ 	padding: 10px 20px;
+ 	line-height: 1;
+ 	color: #fff;
+ 	margin-right: 10px;
+ 	border-radius: 3px;
+
+ }
+}
+
+.redactor_editor{
+	border:1px solid #ddd;
+	border-radius: 5px;
+}
+
+.redactor_toolbar{
+	background: #eee;
+}
+
+span.error{
+	font-size: 14px;
+
+}
+
+#ticketSearchForm{
+	.button{
+	   background:$secondary-color;
+	   border:none;
+	   padding: 10px 20px;
+	   line-height: 1;
+	   color: #fff;
+	   margin-right: 10px;
+	   border-radius: 3px;
+
+	}
+}
+
+.ticklist-title{
+    font-size: 18px;
+    background: #D4D4D4;
+	border:1px solid #ccc;
+    padding: 15px 10px;
+    margin:30px 0px 0px 0px;
+    color: #222;
+    text-shadow: none;
+	.states small{
+		font-size: 16px;
+	}
+    a{
+        color: #333;
+    }
+    i{
+        color: #333;
+    }
+}
+
+
+.ticket-table{
+    background: #fff;
+    table{
+        font-size: 13px;
+		caption{
+			text-align: left;
+			border:1px solid #ddd;
+			border-bottom: none;
+			border-top:none;
+			padding:5px 10px;
+			background: #fafafa;
+			color:#777;
+		}
+        thead{
+            background: #f3f3f3;
+            th{
+                a{
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .paginate{
+        padding:10px 0px 30px 0px;
+        font-size: 14px;
+    }
+}

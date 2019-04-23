@@ -1,0 +1,35 @@
+---
+- 
+  type: ticket-status
+  name: Статус заявки
+  name_plural: Состояния заявки
+  sort_mode: SortCol
+  masks: 13
+  notes: |
+    Состояния заявки
+  properties:
+    title: Свойства состояния заявки
+    instructions: Свойства, которые могут быть установлены для состояния заявки.
+    flags: 0
+    fields:
+      - 
+        type: state
+        name: state
+        label: Состояние
+        sort: 1
+        flags: 487665
+        configuration:
+          prompt: Состояние заявки
+      - 
+        type: memo
+        name: description
+        label: Описание
+        sort: 3
+        flags: 471073
+        configuration:
+          rows: 2
+          cols: 40
+          html: false
+          length: 100
+  configuration:
+    handler: TicketStatusList

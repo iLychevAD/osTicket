@@ -1,0 +1,22 @@
+---
+notes: |
+  Оповещение отправляется всем сотрудникам отдела, когда задача передаётся в их отдел.
+subject: |
+  Задача #%{task.number} передана - %{task.dept.name}
+body: |
+  <h3>Здравствуйте, %{recipient.name},</h3>
+  Задача <a href="%{task.staff_link}">#%{task.number}</a> была передана в отдел %{task.dept.name} сотрудником <strong>%{staff.name.short}</strong>
+  <br>
+  <br>
+  <blockquote>
+  %{comments}
+  </blockquote>
+  <hr>
+  <div>Для просмотра или ответа на задачу, <a
+  href="%{task.staff_link}">войдите</a> в систему поддержки пользователей.
+  </div>
+  <em style="font-size: small; ">Ваша система поддержки клиентов</em>
+  <br>
+  <a href="http://osticket.com/"><img width="126" height="19"
+  alt="Работает на osTicket" style="width: 126px;"
+  src="cid:b56944cb4722cc5cda9d1e23a3ea7fbc"/></a>

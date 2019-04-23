@@ -1,0 +1,89 @@
+---
+helpdesk_status:
+  title: Статус системы
+  content: >
+    If the status is changed to <span class="doc-desc-opt">Offline</span>, the client interface will be disabled.  Only Admins will be able to access the system.
+helpdesk_url:
+  title: URL системы
+  content: >
+    Этот URL является базовым для osTicket. Он будет использован в сообщениях электронной почты, для направления клиентов в Службу поддержки.
+helpdesk_name_title:
+  title: Название/Имя системы
+  content: >
+    Это поле отображается на вкладке браузера - метатег title.
+    Если URL системы добавлен в закладки, то это название и будет там отображаться.
+default_department:
+  title: Отдел по умолчанию
+  content: >
+    Выберите <span class="doc-desc-title">Отдел</span> по умолчанию для Заявок, которые не направляются другому отделу автоматически. <br/><br/> Заявка может быть направлена на основании настроек категории Заявки, входящей почты и фильтра Заявок.
+default_page_size:
+  title: Размер страницы по умолчанию
+  content: >
+    Выберите количество элементов, отображаемых на страницу в Очередях Заявок в Панели Персонала. Каждый Сотрудник может также настроить это число для собственной учетной записи в разделе <span class="doc-desc-title">Мои Настройки</span>.
+default_log_level:
+  title: Уровень детализации журнала по умолчанию
+  content: >
+    Определите минимальный уровень событий, которые будут записываться в <span class="doc-desc-title">системный журнал</span>. <span class="doc-desc-opt">Отладка</span> представляет самый низкий уровень серьезности, а <span class="doc-desc-opt">Ошибка</span> - самый высокий. Например, если Вы хотите видеть все события в <span class="doc-desc-title">Системном Журнале</span> - выберите <span class="doc-desc-opt">Отладка</span>.
+purge_logs:
+  title: Очистить журналы
+  content: >
+    Определите, как долго Вы хотите хранить записи в <span class="doc-desc-title">Системных Жарналах</span>, прежде, чем они будут удалены.
+enable_richtext:
+  title: Включить продвинутый редактор текста
+  content: >
+    Если включено, это позволит использовать дополнительное форматирование между Клиентами и Сотрудниками.
+enable_avatars:
+  title: Показывать аватары в темах обращений
+  content: >
+    Включите эту опцию, чтобы показать <span class="doc-desc-title">аватары</span> в обсуждениях. <br><br><span class="doc-desc-title">Аватары</span> могут быть установлены в настройках сотрудников и пользователей.
+  links:
+    - 
+      title: Настройки сотрудников
+      href: /scp/settings.php?t=agents
+    - 
+      title: Настройки пользователя
+      href: /scp/settings.php?t=users
+collision_avoidance:
+  title: Ограничить время блокировки заявки сотрудником
+  content: >
+    Введите максимальную продолжительность времени, когда сотрудник имеет право удерживать блокировку заявки без какой-либо активности. <br><br>Введите <span class="doc-desc-opt">0</span>, чтобы отключить функцию блокировки.
+date_time_options:
+  title: Настройки даты и времени
+  content: >
+    Следующие настройки определяют параметры по умолчанию для даты и времени для системы поддержки пользователей. Вы можете использовать региональные значения по умолчанию для выбранного стандарта или использовать настройки форматов в соответствии с вашими уникальными требованиями. Обратитесь к строкам формата ICU в качестве эталона для настройки. Даты, показанные ниже, просто иллюстрируют результат их соответствующих значений.
+  links:
+    - 
+      title: См. синтаксис функции PHP Date
+      href: http://userguide.icu-project.org/formatparse/datetime
+languages:
+  title: Языки системы
+  content: >
+    Выберите язык для всей системы и дополнительные языки, чтобы интерфейс автоматически переключался на нужный язык для ваших сотрудников и пользователей.
+primary_language:
+  title: Язык для всей системы
+  content: >
+    Содержание этого языка отображается у сотрудников и пользователей, если их соответствующие языковые предпочтения в настоящее время не выбраны. Это включает в себя содержание интерфейса, а также, пользовательский контент, такой как благодарственные страницы и сообщений электронной почты. <br/><br/> Это язык, на котором должны быть написаны не переводимые версии вашего контента.
+secondary_language:
+  title: Дополнительные языки
+  content: >
+    Выберите параметры языковых предпочтений для Ваших сотрудников и пользователей. Интерфейс будет доступен на этих языках, а также пользовательский контент, например, благодарственных страниц и названия разделов справки и будет переводимый на эти языки.
+attachments:
+  title: Параметры вложений и хранения
+  content: >
+    Настройка сохранения вложений.
+default_storage_bk:
+  title: Хранение файлов
+  content: >
+    Choose how attachments are stored. <br><br> Additional storage backends can be added by installing storage plugins
+max_file_size:
+  title: Максимальный размер файла
+  content: >
+    Выберите максимальный размер файла для вложений, загруженных сотрудниками. Это включает в себя вложения для заготовленных ответов, вложениях в базе знаний, а также вложениях в заявках и ответах на них. Максимальный размер файла в первую очередь будет проверяться в PHP функцией <code>upload_max_filesize</code>.
+  links:
+    - 
+      title: Настройки PHP ini
+      href: "http://php.net/manual/ru/ini.core.php#ini.upload-max-filesize"
+files_req_auth:
+  title: Require Login
+  content: >
+    Enable this setting to forbid serving attachments to unauthenticated users. That is, users must sign into the system (both end users and agents), in order to view attachments. <br><br> From a security perspective, be aware that the user's browser may retain previously-viewed files in its cache. Furthermore, all file links on your helpdesk automatically expire after about 24 hours.
